@@ -1,7 +1,7 @@
 # NYC Schools
 
 Small android application written as a coding challenge for an interview for an Android Developer position. 
-The master branch contains the work finished in the given amount of time (48 Hours) with the Kotlin branch contains a version 
+The master branch contains the work finished in the given amount of time (48 Hours) with the [Kotlin branch](https://github.com/WhosNickDoglio/NYCSchools/tree/kotlin) contains a version 
 rewritten with improvements that were not achievable in the given time frame.
 
 
