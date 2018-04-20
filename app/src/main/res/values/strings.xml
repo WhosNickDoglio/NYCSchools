@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NYCSchools</string>
+
+    <!--Common-->
+    <string name="network_error">There was a network error</string>
+
+    <!--School Detail Fragment-->
+    <string name="no_data_found">No data was found for this school</string>
+    <string name="average_writing_score">"Average Writing Score: "</string>
+    <string name="average_reading_score">"Average Reading Score: "</string>
+    <string name="average_math_score">"Average Math Score: "</string>
+    <string name="num_of_test_takers">"Number of Test Takers: "</string>
+    <string name="unknown">Unknown</string>
+
+</resources>

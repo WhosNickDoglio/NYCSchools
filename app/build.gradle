@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compilesdk
+    defaultConfig {
+        applicationId "com.nicholasdoglio.nycschools"
+        minSdkVersion rootProject.ext.minsdk
+        targetSdkVersion rootProject.ext.targetsdk
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //Android
+    implementation "com.android.support:appcompat-v7:$rootProject.support"
+    implementation "com.android.support:recyclerview-v7:$rootProject.support"
+    implementation "com.android.support.constraint:constraint-layout:$rootProject.constraint"
+
+    //Butterknife
+    implementation "com.jakewharton:butterknife:$rootProject.butterknife"
+    implementation 'com.android.support:support-v4:27.1.1'
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterknife"
+
+    //Rx
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxJava"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxAndroid"
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofit"
+    implementation "com.squareup.retrofit2:converter-moshi:$rootProject.retrofit"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofit"
+
+    //Dagger
+    implementation "com.google.dagger:dagger:$rootProject.dagger"
+    implementation "com.google.dagger:dagger-android:$rootProject.dagger"
+    implementation "com.google.dagger:dagger-android-support:$rootProject.dagger"
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.dagger"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$rootProject.dagger"
+
+    //Testing
+    testImplementation "junit:junit:$rootProject.junit"
+    testImplementation "org.mockito:mockito-core:$rootProject.mockito"
+    androidTestImplementation "com.android.support.test:runner:$rootProject.runner"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$rootProject.espresso"
+}
