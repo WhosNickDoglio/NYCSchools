@@ -26,7 +26,7 @@ Each screen has a `Contract` that outlines interfaces for the relationship betwe
 ## Libraries 
 - [Butterknife](https://jakewharton.github.io/butterknife/) for resource binding
 - [Dagger](https://google.github.io/dagger/) for dependency injection
-- [RxJava](https://github.com/ReactiveX/RxJava) and [RxAndroi](https://github.com/ReactiveX/RxAndroid) for 
+- [RxJava](https://github.com/ReactiveX/RxJava) and [RxAndroid](https://github.com/ReactiveX/RxAndroid) for 
 asynchronous network calls and threading
 - [Retrofit](https://square.github.io/retrofit/) for network calls
 - [Mockito](https://site.mockito.org/) for testing  
